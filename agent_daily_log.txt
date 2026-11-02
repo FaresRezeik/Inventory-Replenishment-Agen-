@@ -1,0 +1,462 @@
+
+===== SKU-A =====
+2025-01-15  day  1  demand  34             end  216
+      ORDER | on-hand 216, on-order 0, fc 34.4/d, sigma 6.5, SS 26 | projected stock in 6d = 10 < SS 26 -> order 150 to reach S=233, arrives in 5d; MOQ raised qty from 17 to 150
+2025-01-16  day  2  demand  43             end  173
+      WAIT  | on-hand 173, on-order 150, fc 37.0/d, sigma 6.7, SS 27 | projected stock in 6d = 101 >= SS 27; ordering now would only add ~$7.50/day holding
+2025-01-17  day  3  demand  50             end  123
+      ORDER | on-hand 123, on-order 150, fc 40.9/d, sigma 7.2, SS 29 | projected stock in 6d = 28 < SS 29 -> order 150 to reach S=274, arrives in 5d; MOQ raised qty from 2 to 150
+2025-01-18  day  4  demand  40             end   83
+      WAIT  | on-hand 83, on-order 300, fc 40.6/d, sigma 7.0, SS 28 | projected stock in 6d = 139 >= SS 28; ordering now would only add ~$7.50/day holding
+2025-01-19  day  5  demand  41             end   42
+      WAIT  | on-hand 42, on-order 300, fc 40.7/d, sigma 6.8, SS 28 | projected stock in 6d = 98 >= SS 28; ordering now would only add ~$7.50/day holding
+2025-01-20  day  6  demand  28  recv  150  end  164
+      WAIT  | on-hand 164, on-order 150, fc 36.9/d, sigma 7.3, SS 29 | projected stock in 6d = 93 >= SS 29; ordering now would only add ~$7.50/day holding
+2025-01-21  day  7  demand  41             end  123
+      WAIT  | on-hand 123, on-order 150, fc 38.1/d, sigma 7.1, SS 29 | projected stock in 6d = 44 >= SS 29; ordering now would only add ~$7.50/day holding
+2025-01-22  day  8  demand  44  recv  150  end  229
+      ORDER | on-hand 229, on-order 0, fc 39.9/d, sigma 7.1, SS 29 | projected stock in 6d = -10 < SS 29 -> order 150 to reach S=268, arrives in 5d; MOQ raised qty from 39 to 150
+2025-01-23  day  9  demand  44             end  185
+      WAIT  | on-hand 185, on-order 150, fc 41.1/d, sigma 7.0, SS 28 | projected stock in 6d = 88 >= SS 28; ordering now would only add ~$7.50/day holding
+2025-01-24  day 10  demand  37             end  148
+      WAIT  | on-hand 148, on-order 150, fc 39.9/d, sigma 6.9, SS 28 | projected stock in 6d = 59 >= SS 28; ordering now would only add ~$7.50/day holding
+2025-01-25  day 11  demand  46             end  102
+      ORDER | on-hand 102, on-order 150, fc 41.7/d, sigma 6.8, SS 28 | projected stock in 6d = 2 < SS 28 -> order 150 to reach S=278, arrives in 5d; MOQ raised qty from 26 to 150
+2025-01-26  day 12  demand  39             end   63
+      WAIT  | on-hand 63, on-order 300, fc 40.9/d, sigma 6.7, SS 27 | projected stock in 6d = 118 >= SS 27; ordering now would only add ~$7.50/day holding
+2025-01-27  day 13  demand  36  recv  150  end  177
+      WAIT  | on-hand 177, on-order 150, fc 39.4/d, sigma 6.7, SS 27 | projected stock in 6d = 90 >= SS 27; ordering now would only add ~$7.50/day holding
+2025-01-28  day 14  demand  36             end  141
+      WAIT  | on-hand 141, on-order 150, fc 38.4/d, sigma 6.6, SS 26 | projected stock in 6d = 61 >= SS 26; ordering now would only add ~$7.50/day holding
+2025-01-29  day 15  demand  34             end  107
+      WAIT  | on-hand 107, on-order 150, fc 37.1/d, sigma 6.5, SS 26 | projected stock in 6d = 35 >= SS 26; ordering now would only add ~$7.50/day holding
+2025-01-30  day 16  demand  53  recv  150  end  204
+      ORDER | on-hand 204, on-order 0, fc 41.9/d, sigma 7.0, SS 28 | projected stock in 6d = -47 < SS 28 -> order 150 to reach S=279, arrives in 5d; MOQ raised qty from 76 to 150
+2025-01-31  day 17  demand  32             end  172
+      WAIT  | on-hand 172, on-order 150, fc 38.9/d, sigma 7.2, SS 29 | projected stock in 6d = 89 >= SS 29; ordering now would only add ~$7.50/day holding
+2025-02-01  day 18  demand  38             end  134
+      WAIT  | on-hand 134, on-order 150, fc 38.6/d, sigma 7.2, SS 29 | projected stock in 6d = 52 >= SS 29; ordering now would only add ~$7.50/day holding
+2025-02-02  day 19  demand  38             end   96
+      ORDER | on-hand 96, on-order 150, fc 38.4/d, sigma 7.1, SS 28 | projected stock in 6d = 15 < SS 28 -> order 150 to reach S=259, arrives in 5d; MOQ raised qty from 14 to 150
+2025-02-03  day 20  demand  37             end   59
+      WAIT  | on-hand 59, on-order 300, fc 38.0/d, sigma 7.0, SS 28 | projected stock in 6d = 131 >= SS 28; ordering now would only add ~$7.50/day holding
+2025-02-04  day 21  demand  41  recv  150  end  168
+      WAIT  | on-hand 168, on-order 150, fc 38.9/d, sigma 7.0, SS 28 | projected stock in 6d = 85 >= SS 28; ordering now would only add ~$7.50/day holding
+2025-02-05  day 22  demand  44             end  124
+      WAIT  | on-hand 124, on-order 150, fc 40.4/d, sigma 7.0, SS 28 | projected stock in 6d = 31 >= SS 28; ordering now would only add ~$7.50/day holding
+2025-02-06  day 23  demand  37             end   87
+      ORDER | on-hand 87, on-order 150, fc 39.4/d, sigma 6.8, SS 27 | projected stock in 6d = 1 < SS 27 -> order 150 to reach S=264, arrives in 5d; MOQ raised qty from 27 to 150
+2025-02-07  day 24  demand  38  recv  150  end  199
+      WAIT  | on-hand 199, on-order 150, fc 39.0/d, sigma 6.8, SS 27 | projected stock in 6d = 115 >= SS 27; ordering now would only add ~$7.50/day holding
+2025-02-08  day 25  demand  42             end  157
+      WAIT  | on-hand 157, on-order 150, fc 39.9/d, sigma 6.6, SS 26 | projected stock in 6d = 68 >= SS 26; ordering now would only add ~$7.50/day holding
+2025-02-09  day 26  demand  34             end  123
+      WAIT  | on-hand 123, on-order 150, fc 38.1/d, sigma 6.5, SS 26 | projected stock in 6d = 44 >= SS 26; ordering now would only add ~$7.50/day holding
+2025-02-10  day 27  demand  32             end   91
+      ORDER | on-hand 91, on-order 150, fc 36.3/d, sigma 6.5, SS 26 | projected stock in 6d = 23 < SS 26 -> order 150 to reach S=244, arrives in 5d; MOQ raised qty from 4 to 150
+2025-02-11  day 28  demand  45  recv  150  end  196
+      WAIT  | on-hand 196, on-order 150, fc 38.9/d, sigma 6.4, SS 26 | projected stock in 6d = 113 >= SS 26; ordering now would only add ~$7.50/day holding
+2025-02-12  day 29  demand  46             end  150
+      WAIT  | on-hand 150, on-order 150, fc 41.0/d, sigma 6.6, SS 26 | projected stock in 6d = 54 >= SS 26; ordering now would only add ~$7.50/day holding
+2025-02-13  day 30  demand  44             end  106
+      ORDER | on-hand 106, on-order 150, fc 41.9/d, sigma 6.4, SS 26 | projected stock in 6d = 4 < SS 26 -> order 150 to reach S=277, arrives in 5d; MOQ raised qty from 22 to 150
+2025-02-14  day 31  demand  45             end   61
+      WAIT  | on-hand 61, on-order 300, fc 42.8/d, sigma 5.9, SS 24 | projected stock in 6d = 104 >= SS 24; ordering now would only add ~$7.50/day holding
+2025-02-15  day 32  demand  39  recv  150  end  172
+      WAIT  | on-hand 172, on-order 150, fc 41.7/d, sigma 5.9, SS 24 | projected stock in 6d = 72 >= SS 24; ordering now would only add ~$7.50/day holding
+2025-02-16  day 33  demand  31             end  141
+      WAIT  | on-hand 141, on-order 150, fc 38.5/d, sigma 6.3, SS 25 | projected stock in 6d = 60 >= SS 25; ordering now would only add ~$7.50/day holding
+2025-02-17  day 34  demand  39             end  102
+      ORDER | on-hand 102, on-order 150, fc 38.6/d, sigma 5.8, SS 23 | projected stock in 6d = 20 < SS 23 -> order 150 to reach S=255, arrives in 5d; MOQ raised qty from 4 to 150
+2025-02-18  day 35  demand  34  recv  150  end  218
+      WAIT  | on-hand 218, on-order 150, fc 37.2/d, sigma 5.8, SS 23 | projected stock in 6d = 145 >= SS 23; ordering now would only add ~$7.50/day holding
+2025-02-19  day 36  demand  42             end  176
+      WAIT  | on-hand 176, on-order 150, fc 38.7/d, sigma 5.8, SS 23 | projected stock in 6d = 94 >= SS 23; ordering now would only add ~$7.50/day holding
+2025-02-20  day 37  demand  33             end  143
+      WAIT  | on-hand 143, on-order 150, fc 37.0/d, sigma 5.8, SS 23 | projected stock in 6d = 71 >= SS 23; ordering now would only add ~$7.50/day holding
+2025-02-21  day 38  demand  42             end  101
+      ORDER | on-hand 101, on-order 150, fc 38.5/d, sigma 5.9, SS 24 | projected stock in 6d = 20 < SS 24 -> order 150 to reach S=254, arrives in 5d; MOQ raised qty from 4 to 150
+2025-02-22  day 39  demand  33  recv  150  end  218
+      WAIT  | on-hand 218, on-order 150, fc 36.8/d, sigma 5.8, SS 23 | projected stock in 6d = 147 >= SS 23; ordering now would only add ~$7.50/day holding
+2025-02-23  day 40  demand  31             end  187
+      WAIT  | on-hand 187, on-order 150, fc 35.1/d, sigma 5.9, SS 24 | projected stock in 6d = 126 >= SS 24; ordering now would only add ~$7.50/day holding
+2025-02-24  day 41  demand  35             end  152
+      WAIT  | on-hand 152, on-order 150, fc 35.1/d, sigma 5.8, SS 24 | projected stock in 6d = 92 >= SS 24; ordering now would only add ~$7.50/day holding
+2025-02-25  day 42  demand  37             end  115
+      WAIT  | on-hand 115, on-order 150, fc 35.6/d, sigma 5.8, SS 23 | projected stock in 6d = 51 >= SS 23; ordering now would only add ~$7.50/day holding
+2025-02-26  day 43  demand  56  recv  150  end  209
+      ORDER | on-hand 209, on-order 0, fc 41.7/d, sigma 6.9, SS 28 | projected stock in 6d = -41 < SS 28 -> order 150 to reach S=278, arrives in 5d; MOQ raised qty from 70 to 150
+2025-02-27  day 44  demand  51             end  158
+      WAIT  | on-hand 158, on-order 150, fc 44.5/d, sigma 6.5, SS 26 | projected stock in 6d = 41 >= SS 26; ordering now would only add ~$7.50/day holding
+2025-02-28  day 45  demand  46             end  112
+      ORDER | on-hand 112, on-order 150, fc 45.0/d, sigma 6.2, SS 25 | projected stock in 6d = -8 < SS 25 -> order 150 to reach S=295, arrives in 5d; MOQ raised qty from 33 to 150
+2025-03-01  day 46  demand  55             end   57
+      WAIT  | on-hand 57, on-order 300, fc 48.0/d, sigma 6.5, SS 26 | projected stock in 6d = 69 >= SS 26; ordering now would only add ~$7.50/day holding
+2025-03-02  day 47  demand  37             end   20
+      WAIT  | on-hand 20, on-order 300, fc 44.7/d, sigma 6.8, SS 27 | projected stock in 6d = 52 >= SS 27; ordering now would only add ~$7.50/day holding
+2025-03-03  day 48  demand  31  recv  150  end  139
+      WAIT  | on-hand 139, on-order 150, fc 40.6/d, sigma 7.3, SS 29 | projected stock in 6d = 46 >= SS 29; ordering now would only add ~$7.50/day holding
+2025-03-04  day 49  demand  34             end  105
+      ORDER | on-hand 105, on-order 150, fc 38.6/d, sigma 7.4, SS 30 | projected stock in 6d = 23 < SS 30 -> order 150 to reach S=261, arrives in 5d; MOQ raised qty from 7 to 150
+2025-03-05  day 50  demand  32  recv  150  end  223
+      WAIT  | on-hand 223, on-order 150, fc 36.6/d, sigma 7.4, SS 30 | projected stock in 6d = 153 >= SS 30; ordering now would only add ~$7.50/day holding
+2025-03-06  day 51  demand  35             end  188
+      WAIT  | on-hand 188, on-order 150, fc 36.1/d, sigma 7.4, SS 30 | projected stock in 6d = 121 >= SS 30; ordering now would only add ~$7.50/day holding
+2025-03-07  day 52  demand  41             end  147
+      WAIT  | on-hand 147, on-order 150, fc 37.6/d, sigma 7.4, SS 30 | projected stock in 6d = 71 >= SS 30; ordering now would only add ~$7.50/day holding
+2025-03-08  day 53  demand  47             end  100
+      ORDER | on-hand 100, on-order 150, fc 40.4/d, sigma 7.6, SS 31 | projected stock in 6d = 7 < SS 31 -> order 150 to reach S=273, arrives in 5d; MOQ raised qty from 24 to 150
+2025-03-09  day 54  demand  32  recv  150  end  218
+      WAIT  | on-hand 218, on-order 150, fc 37.9/d, sigma 7.7, SS 31 | projected stock in 6d = 141 >= SS 31; ordering now would only add ~$7.50/day holding
+2025-03-10  day 55  demand  35             end  183
+      WAIT  | on-hand 183, on-order 150, fc 37.0/d, sigma 7.6, SS 31 | projected stock in 6d = 111 >= SS 31; ordering now would only add ~$7.50/day holding
+2025-03-11  day 56  demand  32             end  151
+      WAIT  | on-hand 151, on-order 150, fc 35.5/d, sigma 7.5, SS 30 | projected stock in 6d = 88 >= SS 30; ordering now would only add ~$7.50/day holding
+2025-03-12  day 57  demand  36             end  115
+      WAIT  | on-hand 115, on-order 150, fc 35.7/d, sigma 7.4, SS 30 | projected stock in 6d = 51 >= SS 30; ordering now would only add ~$7.50/day holding
+2025-03-13  day 58  demand  40  recv  150  end  225
+      ORDER | on-hand 225, on-order 0, fc 37.0/d, sigma 7.4, SS 30 | projected stock in 6d = 3 < SS 30 -> order 150 to reach S=252, arrives in 5d; MOQ raised qty from 27 to 150
+2025-03-14  day 59  demand  38             end  187
+      WAIT  | on-hand 187, on-order 150, fc 37.3/d, sigma 7.4, SS 30 | projected stock in 6d = 113 >= SS 30; ordering now would only add ~$7.50/day holding
+2025-03-15  day 60  demand  52             end  135
+      WAIT  | on-hand 135, on-order 150, fc 41.7/d, sigma 7.9, SS 32 | projected stock in 6d = 35 >= SS 32; ordering now would only add ~$7.50/day holding
+2025-03-16  day 61  demand  38             end   97
+      ORDER | on-hand 97, on-order 150, fc 40.6/d, sigma 7.6, SS 31 | projected stock in 6d = 3 < SS 31 -> order 150 to reach S=274, arrives in 5d; MOQ raised qty from 28 to 150
+2025-03-17  day 62  demand  39             end   58
+      WAIT  | on-hand 58, on-order 300, fc 40.1/d, sigma 7.7, SS 31 | projected stock in 6d = 117 >= SS 31; ordering now would only add ~$7.50/day holding
+2025-03-18  day 63  demand  33  recv  150  end  175
+      WAIT  | on-hand 175, on-order 150, fc 38.0/d, sigma 7.7, SS 31 | projected stock in 6d = 97 >= SS 31; ordering now would only add ~$7.50/day holding
+2025-03-19  day 64  demand  45             end  130
+      WAIT  | on-hand 130, on-order 150, fc 40.1/d, sigma 7.8, SS 31 | projected stock in 6d = 39 >= SS 31; ordering now would only add ~$7.50/day holding
+2025-03-20  day 65  demand  58             end   72
+      ORDER | on-hand 72, on-order 150, fc 45.5/d, sigma 8.4, SS 34 | projected stock in 6d = -51 < SS 34 -> order 150 to reach S=307, arrives in 5d; MOQ raised qty from 85 to 150
+2025-03-21  day 66  demand  37  recv  150  end  185
+      WAIT  | on-hand 185, on-order 150, fc 42.9/d, sigma 8.5, SS 34 | projected stock in 6d = 77 >= SS 34; ordering now would only add ~$7.50/day holding
+2025-03-22  day 67  demand  35             end  150
+      WAIT  | on-hand 150, on-order 150, fc 40.5/d, sigma 8.6, SS 35 | projected stock in 6d = 57 >= SS 35; ordering now would only add ~$7.50/day holding
+2025-03-23  day 68  demand  39             end  111
+      ORDER | on-hand 111, on-order 150, fc 40.1/d, sigma 8.5, SS 34 | projected stock in 6d = 21 < SS 34 -> order 150 to reach S=275, arrives in 5d; MOQ raised qty from 14 to 150
+2025-03-24  day 69  demand  28             end   83
+      WAIT  | on-hand 83, on-order 300, fc 36.5/d, sigma 8.8, SS 36 | projected stock in 6d = 164 >= SS 36; ordering now would only add ~$7.50/day holding
+2025-03-25  day 70  demand  35  recv  150  end  198
+      WAIT  | on-hand 198, on-order 150, fc 36.0/d, sigma 8.8, SS 36 | projected stock in 6d = 132 >= SS 36; ordering now would only add ~$7.50/day holding
+2025-03-26  day 71  demand  32             end  166
+      WAIT  | on-hand 166, on-order 150, fc 34.8/d, sigma 8.0, SS 32 | projected stock in 6d = 107 >= SS 32; ordering now would only add ~$7.50/day holding
+2025-03-27  day 72  demand  35             end  131
+      WAIT  | on-hand 131, on-order 150, fc 34.9/d, sigma 7.8, SS 31 | projected stock in 6d = 72 >= SS 31; ordering now would only add ~$7.50/day holding
+2025-03-28  day 73  demand  50  recv  150  end  231
+      ORDER | on-hand 231, on-order 0, fc 39.4/d, sigma 8.3, SS 33 | projected stock in 6d = -5 < SS 33 -> order 150 to reach S=270, arrives in 5d; MOQ raised qty from 39 to 150
+2025-03-29  day 74  demand  36             end  195
+      WAIT  | on-hand 195, on-order 150, fc 38.4/d, sigma 8.1, SS 33 | projected stock in 6d = 115 >= SS 33; ordering now would only add ~$7.50/day holding
+2025-03-30  day 75  demand  41             end  154
+      WAIT  | on-hand 154, on-order 150, fc 39.2/d, sigma 7.8, SS 32 | projected stock in 6d = 69 >= SS 32; ordering now would only add ~$7.50/day holding
+2025-03-31  day 76  demand  26             end  128
+      WAIT  | on-hand 128, on-order 150, fc 35.2/d, sigma 7.8, SS 31 | projected stock in 6d = 67 >= SS 31; ordering now would only add ~$7.50/day holding
+
+===== SKU-B =====
+2025-01-15  day  1  demand  22             end  128
+      ORDER | on-hand 128, on-order 0, fc 18.9/d, sigma 6.2, SS 33 | projected stock in 8d = -23 < SS 33 -> order 100 to reach S=184, arrives in 7d; MOQ raised qty from 57 to 100
+2025-01-16  day  2  demand  22             end  106
+      WAIT  | on-hand 106, on-order 100, fc 19.8/d, sigma 6.1, SS 32 | projected stock in 8d = 47 >= SS 32; ordering now would only add ~$12.00/day holding
+2025-01-17  day  3  demand  28             end   78
+      ORDER | on-hand 78, on-order 100, fc 22.3/d, sigma 6.2, SS 33 | projected stock in 8d = -0 < SS 33 -> order 100 to reach S=211, arrives in 7d; MOQ raised qty from 34 to 100 | WARNING: projected stockout in 4d, before a new PO can land (7d)
+2025-01-18  day  4  demand  28             end   50
+      WAIT  | on-hand 50, on-order 200, fc 24.0/d, sigma 6.2, SS 33 | projected stock in 8d = 58 >= SS 33; ordering now would only add ~$12.00/day holding | WARNING: projected stockout in 3d, before a new PO can land (7d)
+2025-01-19  day  5  demand  29             end   21
+      ORDER | on-hand 21, on-order 200, fc 25.5/d, sigma 6.1, SS 33 | projected stock in 8d = 17 < SS 33 -> order 100 to reach S=237, arrives in 7d; MOQ raised qty from 16 to 100 | WARNING: projected stockout in 1d, before a new PO can land (7d)
+2025-01-20  day  6  demand  20             end    1
+      WAIT  | on-hand 1, on-order 300, fc 23.8/d, sigma 6.1, SS 32 | projected stock in 8d = 110 >= SS 32; ordering now would only add ~$12.00/day holding | WARNING: projected stockout in 1d, before a new PO can land (7d)
+2025-01-21  day  7  demand  19             end    0  SHORT 18
+      WAIT  | on-hand 0, on-order 300, fc 22.4/d, sigma 6.0, SS 32 | projected stock in 8d = 121 >= SS 32; ordering now would only add ~$12.00/day holding
+2025-01-22  day  8  demand  23  recv  100  end   77
+      WAIT  | on-hand 77, on-order 200, fc 22.6/d, sigma 5.9, SS 31 | projected stock in 8d = 96 >= SS 31; ordering now would only add ~$12.00/day holding
+2025-01-23  day  9  demand  20             end   57
+      WAIT  | on-hand 57, on-order 200, fc 21.8/d, sigma 5.8, SS 31 | projected stock in 8d = 83 >= SS 31; ordering now would only add ~$12.00/day holding
+2025-01-24  day 10  demand  28  recv  100  end  129
+      WAIT  | on-hand 129, on-order 100, fc 23.7/d, sigma 5.8, SS 31 | projected stock in 8d = 40 >= SS 31; ordering now would only add ~$12.00/day holding
+2025-01-25  day 11  demand  21             end  108
+      ORDER | on-hand 108, on-order 100, fc 22.9/d, sigma 5.7, SS 30 | projected stock in 8d = 25 < SS 30 -> order 100 to reach S=213, arrives in 7d; MOQ raised qty from 6 to 100
+2025-01-26  day 12  demand  31  recv  100  end  177
+      WAIT  | on-hand 177, on-order 100, fc 25.3/d, sigma 5.8, SS 31 | projected stock in 8d = 75 >= SS 31; ordering now would only add ~$12.00/day holding
+2025-01-27  day 13  demand  25             end  152
+      WAIT  | on-hand 152, on-order 100, fc 25.2/d, sigma 5.7, SS 30 | projected stock in 8d = 50 >= SS 30; ordering now would only add ~$12.00/day holding
+2025-01-28  day 14  demand  19             end  133
+      WAIT  | on-hand 133, on-order 100, fc 23.3/d, sigma 5.7, SS 31 | projected stock in 8d = 46 >= SS 31; ordering now would only add ~$12.00/day holding
+2025-01-29  day 15  demand  25             end  108
+      ORDER | on-hand 108, on-order 100, fc 23.8/d, sigma 5.6, SS 30 | projected stock in 8d = 17 < SS 30 -> order 100 to reach S=221, arrives in 7d; MOQ raised qty from 13 to 100
+2025-01-30  day 16  demand  20             end   88
+      WAIT  | on-hand 88, on-order 200, fc 22.7/d, sigma 5.7, SS 30 | projected stock in 8d = 106 >= SS 30; ordering now would only add ~$12.00/day holding
+2025-01-31  day 17  demand  16             end   72
+      WAIT  | on-hand 72, on-order 200, fc 20.7/d, sigma 5.8, SS 31 | projected stock in 8d = 107 >= SS 31; ordering now would only add ~$12.00/day holding
+2025-02-01  day 18  demand  41  recv  100  end  131
+      ORDER | on-hand 131, on-order 100, fc 26.8/d, sigma 6.8, SS 36 | projected stock in 8d = 17 < SS 36 -> order 100 to reach S=250, arrives in 7d; MOQ raised qty from 20 to 100
+2025-02-02  day 19  demand  28             end  103
+      WAIT  | on-hand 103, on-order 200, fc 27.1/d, sigma 6.7, SS 36 | projected stock in 8d = 86 >= SS 36; ordering now would only add ~$12.00/day holding
+2025-02-03  day 20  demand  23             end   80
+      WAIT  | on-hand 80, on-order 200, fc 25.9/d, sigma 6.7, SS 36 | projected stock in 8d = 73 >= SS 36; ordering now would only add ~$12.00/day holding
+2025-02-04  day 21  demand  27             end   53
+      WAIT  | on-hand 53, on-order 200, fc 26.2/d, sigma 6.6, SS 35 | projected stock in 8d = 43 >= SS 35; ordering now would only add ~$12.00/day holding
+2025-02-05  day 22  demand  25  recv  100  end  128
+      ORDER | on-hand 128, on-order 100, fc 25.9/d, sigma 6.6, SS 35 | projected stock in 8d = 21 < SS 35 -> order 100 to reach S=242, arrives in 7d; MOQ raised qty from 15 to 100
+2025-02-06  day 23  demand  24             end  104
+      WAIT  | on-hand 104, on-order 200, fc 25.3/d, sigma 6.6, SS 35 | projected stock in 8d = 102 >= SS 35; ordering now would only add ~$12.00/day holding
+2025-02-07  day 24  demand  29             end   75
+      WAIT  | on-hand 75, on-order 200, fc 26.4/d, sigma 6.6, SS 35 | projected stock in 8d = 64 >= SS 35; ordering now would only add ~$12.00/day holding
+2025-02-08  day 25  demand  31  recv  100  end  144
+      ORDER | on-hand 144, on-order 100, fc 27.8/d, sigma 6.4, SS 34 | projected stock in 8d = 22 < SS 34 -> order 100 to reach S=257, arrives in 7d; MOQ raised qty from 13 to 100
+2025-02-09  day 26  demand  37             end  107
+      WAIT  | on-hand 107, on-order 200, fc 30.6/d, sigma 6.6, SS 35 | projected stock in 8d = 63 >= SS 35; ordering now would only add ~$12.00/day holding
+2025-02-10  day 27  demand  21             end   86
+      WAIT  | on-hand 86, on-order 200, fc 27.7/d, sigma 6.4, SS 34 | projected stock in 8d = 65 >= SS 34; ordering now would only add ~$12.00/day holding
+2025-02-11  day 28  demand  27             end   59
+      WAIT  | on-hand 59, on-order 200, fc 27.5/d, sigma 6.2, SS 33 | projected stock in 8d = 39 >= SS 33; ordering now would only add ~$12.00/day holding
+2025-02-12  day 29  demand  18  recv  100  end  141
+      WAIT  | on-hand 141, on-order 100, fc 24.6/d, sigma 6.4, SS 34 | projected stock in 8d = 44 >= SS 34; ordering now would only add ~$12.00/day holding
+2025-02-13  day 30  demand  20             end  121
+      WAIT  | on-hand 121, on-order 100, fc 23.2/d, sigma 6.4, SS 34 | projected stock in 8d = 35 >= SS 34; ordering now would only add ~$12.00/day holding
+2025-02-14  day 31  demand  27             end   94
+      ORDER | on-hand 94, on-order 100, fc 24.4/d, sigma 6.3, SS 33 | projected stock in 8d = -1 < SS 33 -> order 100 to reach S=228, arrives in 7d; MOQ raised qty from 35 to 100
+2025-02-15  day 32  demand  35  recv  100  end  159
+      WAIT  | on-hand 159, on-order 100, fc 27.6/d, sigma 6.5, SS 35 | projected stock in 8d = 39 >= SS 35; ordering now would only add ~$12.00/day holding
+2025-02-16  day 33  demand  44             end  115
+      ORDER | on-hand 115, on-order 100, fc 32.5/d, sigma 7.1, SS 38 | projected stock in 8d = -45 < SS 38 -> order 100 to reach S=298, arrives in 7d; MOQ raised qty from 83 to 100 | WARNING: projected stockout in 4d, before a new PO can land (7d)
+2025-02-17  day 34  demand  13             end  102
+      WAIT  | on-hand 102, on-order 200, fc 26.6/d, sigma 8.0, SS 42 | projected stock in 8d = 89 >= SS 42; ordering now would only add ~$12.00/day holding
+2025-02-18  day 35  demand  19             end   83
+      WAIT  | on-hand 83, on-order 200, fc 24.4/d, sigma 8.1, SS 43 | projected stock in 8d = 88 >= SS 43; ordering now would only add ~$12.00/day holding
+2025-02-19  day 36  demand  30             end   53
+      WAIT  | on-hand 53, on-order 200, fc 26.0/d, sigma 8.1, SS 43 | projected stock in 8d = 45 >= SS 43; ordering now would only add ~$12.00/day holding
+2025-02-20  day 37  demand  32             end   21
+      ORDER | on-hand 21, on-order 200, fc 27.8/d, sigma 8.2, SS 44 | projected stock in 8d = -2 < SS 44 -> order 100 to reach S=266, arrives in 7d; MOQ raised qty from 46 to 100
+2025-02-21  day 38  demand  30  recv  100  end   91
+      WAIT  | on-hand 91, on-order 200, fc 28.5/d, sigma 8.1, SS 43 | projected stock in 8d = 63 >= SS 43; ordering now would only add ~$12.00/day holding
+2025-02-22  day 39  demand  30             end   61
+      ORDER | on-hand 61, on-order 200, fc 28.9/d, sigma 8.1, SS 43 | projected stock in 8d = 29 < SS 43 -> order 100 to reach S=275, arrives in 7d; MOQ raised qty from 14 to 100
+2025-02-23  day 40  demand  39  recv  100  end  122
+      WAIT  | on-hand 122, on-order 200, fc 32.0/d, sigma 8.2, SS 44 | projected stock in 8d = 66 >= SS 44; ordering now would only add ~$12.00/day holding
+2025-02-24  day 41  demand  19             end  103
+      WAIT  | on-hand 103, on-order 200, fc 28.1/d, sigma 8.5, SS 45 | projected stock in 8d = 78 >= SS 45; ordering now would only add ~$12.00/day holding
+2025-02-25  day 42  demand  32             end   71
+      ORDER | on-hand 71, on-order 200, fc 29.2/d, sigma 8.5, SS 45 | projected stock in 8d = 37 < SS 45 -> order 100 to reach S=279, arrives in 7d; MOQ raised qty from 9 to 100
+2025-02-26  day 43  demand  29             end   42
+      WAIT  | on-hand 42, on-order 300, fc 29.2/d, sigma 8.5, SS 45 | projected stock in 8d = 109 >= SS 45; ordering now would only add ~$12.00/day holding
+2025-02-27  day 44  demand  39  recv  100  end  103
+      ORDER | on-hand 103, on-order 200, fc 32.1/d, sigma 8.7, SS 46 | projected stock in 8d = 46 < SS 46 -> order 100 to reach S=303, arrives in 7d; MOQ raised qty from 1 to 100
+2025-02-28  day 45  demand  29             end   74
+      WAIT  | on-hand 74, on-order 300, fc 31.2/d, sigma 8.6, SS 46 | projected stock in 8d = 125 >= SS 46; ordering now would only add ~$12.00/day holding
+2025-03-01  day 46  demand  29  recv  100  end  145
+      WAIT  | on-hand 145, on-order 200, fc 30.5/d, sigma 7.7, SS 41 | projected stock in 8d = 101 >= SS 41; ordering now would only add ~$12.00/day holding
+2025-03-02  day 47  demand  35             end  110
+      WAIT  | on-hand 110, on-order 200, fc 31.9/d, sigma 7.7, SS 41 | projected stock in 8d = 55 >= SS 41; ordering now would only add ~$12.00/day holding
+2025-03-03  day 48  demand  21             end   89
+      WAIT  | on-hand 89, on-order 200, fc 28.6/d, sigma 8.0, SS 42 | projected stock in 8d = 60 >= SS 42; ordering now would only add ~$12.00/day holding
+2025-03-04  day 49  demand  25  recv  100  end  164
+      WAIT  | on-hand 164, on-order 100, fc 27.5/d, sigma 8.0, SS 42 | projected stock in 8d = 44 >= SS 42; ordering now would only add ~$12.00/day holding
+2025-03-05  day 50  demand  28             end  136
+      ORDER | on-hand 136, on-order 100, fc 27.7/d, sigma 8.0, SS 42 | projected stock in 8d = 15 < SS 42 -> order 100 to reach S=264, arrives in 7d; MOQ raised qty from 28 to 100
+2025-03-06  day 51  demand  32  recv  100  end  204
+      WAIT  | on-hand 204, on-order 100, fc 29.0/d, sigma 8.0, SS 43 | projected stock in 8d = 72 >= SS 43; ordering now would only add ~$12.00/day holding
+2025-03-07  day 52  demand  28             end  176
+      WAIT  | on-hand 176, on-order 100, fc 28.7/d, sigma 8.0, SS 42 | projected stock in 8d = 47 >= SS 42; ordering now would only add ~$12.00/day holding
+2025-03-08  day 53  demand  39             end  137
+      ORDER | on-hand 137, on-order 100, fc 31.8/d, sigma 8.2, SS 43 | projected stock in 8d = -17 < SS 43 -> order 100 to reach S=298, arrives in 7d; MOQ raised qty from 61 to 100
+2025-03-09  day 54  demand  38             end   99
+      ORDER | on-hand 99, on-order 200, fc 33.6/d, sigma 8.1, SS 43 | projected stock in 8d = 30 < SS 43 -> order 100 to reach S=312, arrives in 7d; MOQ raised qty from 14 to 100
+2025-03-10  day 55  demand  31             end   68
+      WAIT  | on-hand 68, on-order 300, fc 32.8/d, sigma 7.9, SS 42 | projected stock in 8d = 105 >= SS 42; ordering now would only add ~$12.00/day holding
+2025-03-11  day 56  demand  34             end   34
+      WAIT  | on-hand 34, on-order 300, fc 33.2/d, sigma 7.9, SS 42 | projected stock in 8d = 68 >= SS 42; ordering now would only add ~$12.00/day holding
+2025-03-12  day 57  demand  33  recv  100  end  101
+      ORDER | on-hand 101, on-order 200, fc 33.1/d, sigma 7.7, SS 41 | projected stock in 8d = 36 < SS 41 -> order 100 to reach S=306, arrives in 7d; MOQ raised qty from 5 to 100
+2025-03-13  day 58  demand  36             end   65
+      WAIT  | on-hand 65, on-order 300, fc 34.0/d, sigma 7.7, SS 41 | projected stock in 8d = 93 >= SS 41; ordering now would only add ~$12.00/day holding
+2025-03-14  day 59  demand  30             end   35
+      WAIT  | on-hand 35, on-order 300, fc 32.8/d, sigma 7.7, SS 41 | projected stock in 8d = 73 >= SS 41; ordering now would only add ~$12.00/day holding
+2025-03-15  day 60  demand  37  recv  100  end   98
+      ORDER | on-hand 98, on-order 200, fc 34.1/d, sigma 7.4, SS 40 | projected stock in 8d = 26 < SS 40 -> order 100 to reach S=312, arrives in 7d; MOQ raised qty from 14 to 100
+2025-03-16  day 61  demand  50  recv  100  end  148
+      ORDER | on-hand 148, on-order 200, fc 38.8/d, sigma 7.4, SS 39 | projected stock in 8d = 37 < SS 39 -> order 100 to reach S=350, arrives in 7d; MOQ raised qty from 3 to 100
+2025-03-17  day 62  demand  32             end  116
+      WAIT  | on-hand 116, on-order 300, fc 36.8/d, sigma 6.5, SS 35 | projected stock in 8d = 122 >= SS 35; ordering now would only add ~$12.00/day holding
+2025-03-18  day 63  demand  29             end   87
+      WAIT  | on-hand 87, on-order 300, fc 34.5/d, sigma 6.5, SS 35 | projected stock in 8d = 111 >= SS 35; ordering now would only add ~$12.00/day holding
+2025-03-19  day 64  demand  32  recv  100  end  155
+      WAIT  | on-hand 155, on-order 200, fc 33.7/d, sigma 6.5, SS 34 | projected stock in 8d = 85 >= SS 34; ordering now would only add ~$12.00/day holding
+2025-03-20  day 65  demand  20             end  135
+      WAIT  | on-hand 135, on-order 200, fc 29.6/d, sigma 6.9, SS 37 | projected stock in 8d = 98 >= SS 37; ordering now would only add ~$12.00/day holding
+2025-03-21  day 66  demand  30             end  105
+      WAIT  | on-hand 105, on-order 200, fc 29.7/d, sigma 6.9, SS 37 | projected stock in 8d = 67 >= SS 37; ordering now would only add ~$12.00/day holding
+2025-03-22  day 67  demand  37  recv  100  end  168
+      ORDER | on-hand 168, on-order 100, fc 31.9/d, sigma 7.0, SS 37 | projected stock in 8d = 13 < SS 37 -> order 100 to reach S=292, arrives in 7d; MOQ raised qty from 25 to 100
+2025-03-23  day 68  demand  49  recv  100  end  219
+      ORDER | on-hand 219, on-order 100, fc 37.0/d, sigma 7.5, SS 40 | projected stock in 8d = 23 < SS 40 -> order 100 to reach S=336, arrives in 7d; MOQ raised qty from 18 to 100
+2025-03-24  day 69  demand  26             end  193
+      WAIT  | on-hand 193, on-order 200, fc 33.7/d, sigma 7.4, SS 39 | projected stock in 8d = 123 >= SS 39; ordering now would only add ~$12.00/day holding
+2025-03-25  day 70  demand  26             end  167
+      WAIT  | on-hand 167, on-order 200, fc 31.4/d, sigma 7.5, SS 40 | projected stock in 8d = 116 >= SS 40; ordering now would only add ~$12.00/day holding
+2025-03-26  day 71  demand  39             end  128
+      WAIT  | on-hand 128, on-order 200, fc 33.7/d, sigma 7.6, SS 40 | projected stock in 8d = 59 >= SS 40; ordering now would only add ~$12.00/day holding
+2025-03-27  day 72  demand  37             end   91
+      ORDER | on-hand 91, on-order 200, fc 34.7/d, sigma 7.4, SS 39 | projected stock in 8d = 14 < SS 39 -> order 100 to reach S=317, arrives in 7d; MOQ raised qty from 26 to 100
+2025-03-28  day 73  demand  32             end   59
+      WAIT  | on-hand 59, on-order 300, fc 33.9/d, sigma 7.4, SS 39 | projected stock in 8d = 88 >= SS 39; ordering now would only add ~$12.00/day holding
+2025-03-29  day 74  demand  43  recv  100  end  116
+      ORDER | on-hand 116, on-order 200, fc 36.6/d, sigma 7.6, SS 40 | projected stock in 8d = 23 < SS 40 -> order 100 to reach S=333, arrives in 7d; MOQ raised qty from 18 to 100
+2025-03-30  day 75  demand  35  recv  100  end  181
+      WAIT  | on-hand 181, on-order 200, fc 36.1/d, sigma 7.5, SS 40 | projected stock in 8d = 92 >= SS 40; ordering now would only add ~$12.00/day holding
+2025-03-31  day 76  demand  33             end  148
+      WAIT  | on-hand 148, on-order 200, fc 35.2/d, sigma 7.3, SS 39 | projected stock in 8d = 66 >= SS 39; ordering now would only add ~$12.00/day holding
+
+===== SKU-C =====
+2025-01-15  day  1  demand   3             end   37
+      ORDER | on-hand 37, on-order 0, fc 3.8/d, sigma 2.7, SS 11 | projected stock in 11d = -5 < SS 11 -> order 20 to reach S=54, arrives in 10d; MOQ raised qty from 17 to 20
+2025-01-16  day  2  demand  10             end   27
+      ORDER | on-hand 27, on-order 20, fc 5.7/d, sigma 3.0, SS 13 | projected stock in 11d = -15 < SS 13 -> order 29 to reach S=75, arrives in 10d | WARNING: projected stockout in 5d, before a new PO can land (10d)
+2025-01-17  day  3  demand   5             end   22
+      ORDER | on-hand 22, on-order 49, fc 5.5/d, sigma 2.9, SS 13 | projected stock in 11d = 11 < SS 13 -> order 20 to reach S=73, arrives in 10d; MOQ raised qty from 2 to 20 | WARNING: projected stockout in 5d, before a new PO can land (10d)
+2025-01-18  day  4  demand   2             end   20
+      WAIT  | on-hand 20, on-order 69, fc 4.4/d, sigma 3.0, SS 13 | projected stock in 11d = 40 >= SS 13; ordering now would only add ~$6.00/day holding | WARNING: projected stockout in 5d, before a new PO can land (10d)
+2025-01-19  day  5  demand   1             end   19
+      WAIT  | on-hand 19, on-order 69, fc 3.4/d, sigma 3.0, SS 13 | projected stock in 11d = 51 >= SS 13; ordering now would only add ~$6.00/day holding
+2025-01-20  day  6  demand   2             end   17
+      WAIT  | on-hand 17, on-order 69, fc 3.0/d, sigma 2.9, SS 13 | projected stock in 11d = 53 >= SS 13; ordering now would only add ~$6.00/day holding
+2025-01-21  day  7  demand  16             end    1
+      ORDER | on-hand 1, on-order 69, fc 6.9/d, sigma 4.1, SS 17 | projected stock in 11d = -6 < SS 17 -> order 24 to reach S=93, arrives in 10d | WARNING: projected stockout in 1d, before a new PO can land (10d)
+2025-01-22  day  8  demand   2             end    0  SHORT 1
+      WAIT  | on-hand 0, on-order 93, fc 5.4/d, sigma 4.1, SS 18 | projected stock in 11d = 33 >= SS 18; ordering now would only add ~$6.00/day holding | WARNING: projected stockout in 1d, before a new PO can land (10d)
+2025-01-23  day  9  demand   3             end    0  SHORT 3
+      WAIT  | on-hand 0, on-order 93, fc 4.7/d, sigma 4.1, SS 17 | projected stock in 11d = 41 >= SS 17; ordering now would only add ~$6.00/day holding | WARNING: projected stockout in 1d, before a new PO can land (10d)
+2025-01-24  day 10  demand   1             end    0  SHORT 1
+      WAIT  | on-hand 0, on-order 93, fc 3.6/d, sigma 4.1, SS 17 | projected stock in 11d = 54 >= SS 17; ordering now would only add ~$6.00/day holding
+2025-01-25  day 11  demand   2  recv   20  end   18
+      WAIT  | on-hand 18, on-order 73, fc 3.1/d, sigma 4.0, SS 17 | projected stock in 11d = 57 >= SS 17; ordering now would only add ~$6.00/day holding
+2025-01-26  day 12  demand   6  recv   29  end   41
+      WAIT  | on-hand 41, on-order 44, fc 4.0/d, sigma 3.9, SS 17 | projected stock in 11d = 41 >= SS 17; ordering now would only add ~$6.00/day holding
+2025-01-27  day 13  demand   4  recv   20  end   57
+      WAIT  | on-hand 57, on-order 24, fc 4.0/d, sigma 3.9, SS 16 | projected stock in 11d = 37 >= SS 16; ordering now would only add ~$6.00/day holding
+2025-01-28  day 14  demand   2             end   55
+      WAIT  | on-hand 55, on-order 24, fc 3.4/d, sigma 3.8, SS 16 | projected stock in 11d = 42 >= SS 16; ordering now would only add ~$6.00/day holding
+2025-01-29  day 15  demand   3             end   52
+      WAIT  | on-hand 52, on-order 24, fc 3.3/d, sigma 3.7, SS 16 | projected stock in 11d = 40 >= SS 16; ordering now would only add ~$6.00/day holding
+2025-01-30  day 16  demand   2             end   50
+      WAIT  | on-hand 50, on-order 24, fc 2.9/d, sigma 3.6, SS 15 | projected stock in 11d = 42 >= SS 15; ordering now would only add ~$6.00/day holding
+2025-01-31  day 17  demand   1  recv   24  end   73
+      WAIT  | on-hand 73, on-order 0, fc 2.3/d, sigma 3.6, SS 15 | projected stock in 11d = 47 >= SS 15; ordering now would only add ~$6.00/day holding
+2025-02-01  day 18  demand   2             end   71
+      WAIT  | on-hand 71, on-order 0, fc 2.2/d, sigma 3.6, SS 15 | projected stock in 11d = 47 >= SS 15; ordering now would only add ~$6.00/day holding
+2025-02-02  day 19  demand   3             end   68
+      WAIT  | on-hand 68, on-order 0, fc 2.5/d, sigma 3.6, SS 15 | projected stock in 11d = 41 >= SS 15; ordering now would only add ~$6.00/day holding
+2025-02-03  day 20  demand   5             end   63
+      WAIT  | on-hand 63, on-order 0, fc 3.2/d, sigma 3.6, SS 15 | projected stock in 11d = 28 >= SS 15; ordering now would only add ~$6.00/day holding
+2025-02-04  day 21  demand   8             end   55
+      ORDER | on-hand 55, on-order 0, fc 4.7/d, sigma 3.7, SS 16 | projected stock in 11d = 4 < SS 16 -> order 20 to reach S=67, arrives in 10d; MOQ raised qty from 12 to 20
+2025-02-05  day 22  demand   3             end   52
+      WAIT  | on-hand 52, on-order 20, fc 4.2/d, sigma 3.7, SS 16 | projected stock in 11d = 26 >= SS 16; ordering now would only add ~$6.00/day holding
+2025-02-06  day 23  demand   1             end   51
+      WAIT  | on-hand 51, on-order 20, fc 3.2/d, sigma 3.7, SS 16 | projected stock in 11d = 36 >= SS 16; ordering now would only add ~$6.00/day holding
+2025-02-07  day 24  demand   1             end   50
+      WAIT  | on-hand 50, on-order 20, fc 2.5/d, sigma 3.7, SS 16 | projected stock in 11d = 42 >= SS 16; ordering now would only add ~$6.00/day holding
+2025-02-08  day 25  demand   6             end   44
+      WAIT  | on-hand 44, on-order 20, fc 3.6/d, sigma 3.6, SS 15 | projected stock in 11d = 25 >= SS 15; ordering now would only add ~$6.00/day holding
+2025-02-09  day 26  demand   2             end   42
+      WAIT  | on-hand 42, on-order 20, fc 3.1/d, sigma 3.6, SS 15 | projected stock in 11d = 28 >= SS 15; ordering now would only add ~$6.00/day holding
+2025-02-10  day 27  demand   2             end   40
+      WAIT  | on-hand 40, on-order 20, fc 2.8/d, sigma 3.6, SS 15 | projected stock in 11d = 29 >= SS 15; ordering now would only add ~$6.00/day holding
+2025-02-11  day 28  demand   0             end   40
+      WAIT  | on-hand 40, on-order 20, fc 1.9/d, sigma 3.6, SS 15 | projected stock in 11d = 39 >= SS 15; ordering now would only add ~$6.00/day holding
+2025-02-12  day 29  demand   7             end   33
+      ORDER | on-hand 33, on-order 20, fc 3.5/d, sigma 3.8, SS 16 | projected stock in 11d = 15 < SS 16 -> order 20 to reach S=54, arrives in 10d; MOQ raised qty from 2 to 20
+2025-02-13  day 30  demand   2             end   31
+      WAIT  | on-hand 31, on-order 40, fc 3.0/d, sigma 3.6, SS 15 | projected stock in 11d = 38 >= SS 15; ordering now would only add ~$6.00/day holding
+2025-02-14  day 31  demand   2  recv   20  end   49
+      WAIT  | on-hand 49, on-order 20, fc 2.7/d, sigma 3.6, SS 15 | projected stock in 11d = 39 >= SS 15; ordering now would only add ~$6.00/day holding
+2025-02-15  day 32  demand   5             end   44
+      WAIT  | on-hand 44, on-order 20, fc 3.4/d, sigma 3.5, SS 15 | projected stock in 11d = 27 >= SS 15; ordering now would only add ~$6.00/day holding
+2025-02-16  day 33  demand  18             end   26
+      ORDER | on-hand 26, on-order 20, fc 7.8/d, sigma 4.4, SS 19 | projected stock in 11d = -40 < SS 19 -> order 59 to reach S=104, arrives in 10d | WARNING: projected stockout in 4d, before a new PO can land (10d)
+2025-02-17  day 34  demand   6             end   20
+      WAIT  | on-hand 20, on-order 79, fc 7.2/d, sigma 4.4, SS 19 | projected stock in 11d = 19 >= SS 19; ordering now would only add ~$6.00/day holding | WARNING: projected stockout in 3d, before a new PO can land (10d)
+2025-02-18  day 35  demand   3             end   17
+      WAIT  | on-hand 17, on-order 79, fc 6.0/d, sigma 3.8, SS 16 | projected stock in 11d = 30 >= SS 16; ordering now would only add ~$6.00/day holding | WARNING: projected stockout in 3d, before a new PO can land (10d)
+2025-02-19  day 36  demand   5             end   12
+      WAIT  | on-hand 12, on-order 79, fc 5.7/d, sigma 3.7, SS 16 | projected stock in 11d = 29 >= SS 16; ordering now would only add ~$6.00/day holding | WARNING: projected stockout in 6d, before a new PO can land (10d)
+2025-02-20  day 37  demand   4             end    8
+      WAIT  | on-hand 8, on-order 79, fc 5.2/d, sigma 3.7, SS 16 | projected stock in 11d = 30 >= SS 16; ordering now would only add ~$6.00/day holding
+2025-02-21  day 38  demand   8             end    0
+      ORDER | on-hand 0, on-order 79, fc 6.0/d, sigma 3.6, SS 15 | projected stock in 11d = 13 < SS 15 -> order 20 to reach S=82, arrives in 10d; MOQ raised qty from 3 to 20 | WARNING: projected stockout in 4d, before a new PO can land (10d)
+2025-02-22  day 39  demand   4  recv   20  end   16
+      WAIT  | on-hand 16, on-order 79, fc 5.4/d, sigma 3.6, SS 16 | projected stock in 11d = 35 >= SS 16; ordering now would only add ~$6.00/day holding | WARNING: projected stockout in 3d, before a new PO can land (10d)
+2025-02-23  day 40  demand   1             end   15
+      WAIT  | on-hand 15, on-order 79, fc 4.1/d, sigma 3.7, SS 16 | projected stock in 11d = 49 >= SS 16; ordering now would only add ~$6.00/day holding
+2025-02-24  day 41  demand   6             end    9
+      WAIT  | on-hand 9, on-order 79, fc 4.7/d, sigma 3.7, SS 16 | projected stock in 11d = 37 >= SS 16; ordering now would only add ~$6.00/day holding
+2025-02-25  day 42  demand   5             end    4
+      WAIT  | on-hand 4, on-order 79, fc 4.8/d, sigma 3.7, SS 16 | projected stock in 11d = 31 >= SS 16; ordering now would only add ~$6.00/day holding
+2025-02-26  day 43  demand   3  recv   59  end   60
+      WAIT  | on-hand 60, on-order 20, fc 4.2/d, sigma 3.7, SS 16 | projected stock in 11d = 33 >= SS 16; ordering now would only add ~$6.00/day holding
+2025-02-27  day 44  demand   4             end   56
+      WAIT  | on-hand 56, on-order 20, fc 4.2/d, sigma 3.7, SS 16 | projected stock in 11d = 30 >= SS 16; ordering now would only add ~$6.00/day holding
+2025-02-28  day 45  demand   4             end   52
+      WAIT  | on-hand 52, on-order 20, fc 4.1/d, sigma 3.7, SS 16 | projected stock in 11d = 27 >= SS 16; ordering now would only add ~$6.00/day holding
+2025-03-01  day 46  demand   3             end   49
+      WAIT  | on-hand 49, on-order 20, fc 3.8/d, sigma 3.7, SS 16 | projected stock in 11d = 27 >= SS 16; ordering now would only add ~$6.00/day holding
+2025-03-02  day 47  demand   4             end   45
+      WAIT  | on-hand 45, on-order 20, fc 3.8/d, sigma 3.7, SS 16 | projected stock in 11d = 23 >= SS 16; ordering now would only add ~$6.00/day holding
+2025-03-03  day 48  demand  16  recv   20  end   49
+      ORDER | on-hand 49, on-order 0, fc 7.5/d, sigma 4.3, SS 18 | projected stock in 11d = -33 < SS 18 -> order 52 to reach S=101, arrives in 10d | WARNING: projected stockout in 7d, before a new PO can land (10d)
+2025-03-04  day 49  demand   7             end   42
+      ORDER | on-hand 42, on-order 52, fc 7.3/d, sigma 4.2, SS 18 | projected stock in 11d = 13 < SS 18 -> order 20 to reach S=99, arrives in 10d; MOQ raised qty from 5 to 20 | WARNING: projected stockout in 6d, before a new PO can land (10d)
+2025-03-05  day 50  demand   2             end   40
+      WAIT  | on-hand 40, on-order 72, fc 5.7/d, sigma 4.3, SS 18 | projected stock in 11d = 49 >= SS 18; ordering now would only add ~$6.00/day holding | WARNING: projected stockout in 7d, before a new PO can land (10d)
+2025-03-06  day 51  demand   4             end   36
+      WAIT  | on-hand 36, on-order 72, fc 5.2/d, sigma 4.3, SS 18 | projected stock in 11d = 51 >= SS 18; ordering now would only add ~$6.00/day holding
+2025-03-07  day 52  demand   4             end   32
+      WAIT  | on-hand 32, on-order 72, fc 4.9/d, sigma 4.3, SS 18 | projected stock in 11d = 51 >= SS 18; ordering now would only add ~$6.00/day holding
+2025-03-08  day 53  demand   4             end   28
+      WAIT  | on-hand 28, on-order 72, fc 4.6/d, sigma 4.2, SS 18 | projected stock in 11d = 49 >= SS 18; ordering now would only add ~$6.00/day holding
+2025-03-09  day 54  demand   3             end   25
+      WAIT  | on-hand 25, on-order 72, fc 4.1/d, sigma 4.2, SS 18 | projected stock in 11d = 52 >= SS 18; ordering now would only add ~$6.00/day holding
+2025-03-10  day 55  demand   3             end   22
+      WAIT  | on-hand 22, on-order 72, fc 3.8/d, sigma 4.2, SS 18 | projected stock in 11d = 52 >= SS 18; ordering now would only add ~$6.00/day holding
+2025-03-11  day 56  demand  18             end    4
+      ORDER | on-hand 4, on-order 72, fc 8.0/d, sigma 5.0, SS 21 | projected stock in 11d = -13 < SS 21 -> order 34 to reach S=110, arrives in 10d | WARNING: projected stockout in 1d, before a new PO can land (10d)
+2025-03-12  day 57  demand   6             end    0  SHORT 2
+      WAIT  | on-hand 0, on-order 106, fc 7.4/d, sigma 4.9, SS 21 | projected stock in 11d = 24 >= SS 21; ordering now would only add ~$6.00/day holding
+2025-03-13  day 58  demand   6  recv   52  end   46
+      WAIT  | on-hand 46, on-order 54, fc 7.0/d, sigma 4.9, SS 21 | projected stock in 11d = 23 >= SS 21; ordering now would only add ~$6.00/day holding
+2025-03-14  day 59  demand   3  recv   20  end   63
+      WAIT  | on-hand 63, on-order 34, fc 5.8/d, sigma 5.0, SS 21 | projected stock in 11d = 33 >= SS 21; ordering now would only add ~$6.00/day holding
+2025-03-15  day 60  demand   5             end   58
+      WAIT  | on-hand 58, on-order 34, fc 5.6/d, sigma 5.0, SS 21 | projected stock in 11d = 31 >= SS 21; ordering now would only add ~$6.00/day holding
+2025-03-16  day 61  demand   1             end   57
+      WAIT  | on-hand 57, on-order 34, fc 4.2/d, sigma 4.2, SS 18 | projected stock in 11d = 45 >= SS 18; ordering now would only add ~$6.00/day holding
+2025-03-17  day 62  demand   4             end   53
+      WAIT  | on-hand 53, on-order 34, fc 4.1/d, sigma 4.2, SS 18 | projected stock in 11d = 42 >= SS 18; ordering now would only add ~$6.00/day holding
+2025-03-18  day 63  demand   6             end   47
+      WAIT  | on-hand 47, on-order 34, fc 4.7/d, sigma 4.1, SS 18 | projected stock in 11d = 29 >= SS 18; ordering now would only add ~$6.00/day holding
+2025-03-19  day 64  demand   3             end   44
+      WAIT  | on-hand 44, on-order 34, fc 4.2/d, sigma 4.1, SS 18 | projected stock in 11d = 32 >= SS 18; ordering now would only add ~$6.00/day holding
+2025-03-20  day 65  demand   7             end   37
+      ORDER | on-hand 37, on-order 34, fc 5.0/d, sigma 4.2, SS 18 | projected stock in 11d = 16 < SS 18 -> order 20 to reach S=73, arrives in 10d; MOQ raised qty from 3 to 20
+2025-03-21  day 66  demand  21  recv   34  end   50
+      ORDER | on-hand 50, on-order 20, fc 9.8/d, sigma 5.1, SS 22 | projected stock in 11d = -38 < SS 22 -> order 60 to reach S=130, arrives in 10d | WARNING: projected stockout in 6d, before a new PO can land (10d)
+2025-03-22  day 67  demand   2             end   48
+      WAIT  | on-hand 48, on-order 80, fc 7.5/d, sigma 5.3, SS 23 | projected stock in 11d = 46 >= SS 23; ordering now would only add ~$6.00/day holding | WARNING: projected stockout in 7d, before a new PO can land (10d)
+2025-03-23  day 68  demand   2             end   46
+      WAIT  | on-hand 46, on-order 80, fc 5.8/d, sigma 5.3, SS 23 | projected stock in 11d = 62 >= SS 23; ordering now would only add ~$6.00/day holding
+2025-03-24  day 69  demand   6             end   40
+      WAIT  | on-hand 40, on-order 80, fc 5.9/d, sigma 5.3, SS 23 | projected stock in 11d = 55 >= SS 23; ordering now would only add ~$6.00/day holding
+2025-03-25  day 70  demand   4             end   36
+      WAIT  | on-hand 36, on-order 80, fc 5.3/d, sigma 5.3, SS 23 | projected stock in 11d = 58 >= SS 23; ordering now would only add ~$6.00/day holding
+2025-03-26  day 71  demand   3             end   33
+      WAIT  | on-hand 33, on-order 80, fc 4.6/d, sigma 5.4, SS 23 | projected stock in 11d = 62 >= SS 23; ordering now would only add ~$6.00/day holding
+2025-03-27  day 72  demand   8             end   25
+      WAIT  | on-hand 25, on-order 80, fc 5.6/d, sigma 5.4, SS 23 | projected stock in 11d = 43 >= SS 23; ordering now would only add ~$6.00/day holding
+2025-03-28  day 73  demand   7             end   18
+      WAIT  | on-hand 18, on-order 80, fc 6.0/d, sigma 5.4, SS 23 | projected stock in 11d = 32 >= SS 23; ordering now would only add ~$6.00/day holding
+2025-03-29  day 74  demand   3             end   15
+      WAIT  | on-hand 15, on-order 80, fc 5.1/d, sigma 5.4, SS 23 | projected stock in 11d = 39 >= SS 23; ordering now would only add ~$6.00/day holding
+2025-03-30  day 75  demand  21  recv   20  end   14
+      ORDER | on-hand 14, on-order 60, fc 9.9/d, sigma 6.2, SS 26 | projected stock in 11d = -35 < SS 26 -> order 62 to reach S=135, arrives in 10d | WARNING: projected stockout in 8d, before a new PO can land (10d)
+2025-03-31  day 76  demand   1  recv   60  end   73
+      WAIT  | on-hand 73, on-order 62, fc 7.2/d, sigma 6.0, SS 25 | projected stock in 11d = 56 >= SS 25; ordering now would only add ~$6.00/day holding

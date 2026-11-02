@@ -1,0 +1,8 @@
+# Scaling Note: Inventory Replenishment Agent
+**Cloud deployment.** Package the agent as a container image and run it as a **scheduled job** once a day after the sales close (Cloud Run Jobs / AWS ECS scheduled task / Airflow DAG). Inputs come from the warehouse (sales, stock, open POs, supplier params) instead of CSVs. Output is a table of recommended POs plus the rationale log, sent to the ERP as *draft* POs a buyer approves. SKUs are independent, so the job shards by SKU or category and runs in parallel.
+
+**Monitoring.** Track daily per SKU and category: fill rate, stockout days, forecast error (MAE, bias) and inventory value. Alert when fill rate drops below target for 3+ days, when forecast bias stays one-sided (the model has drifted), or when a SKU's order volume jumps far above its history. Every rationale line is stored for audits.
+
+**Reliability.** Retry data loads with backoff and make runs idempotent (re-running a day doesn't duplicate POs, because they're keyed by SKU + date). Handle missing data explicitly: no sales rows means 0 demand only if the store was open; a missing feed should pause ordering for that SKU, not order on zeros. Validate inputs (schema, negative stock, missing params) and fall back to the last good forecast on failure.
+
+**Cost controls.** Enforce guardrails outside the model: a per-SKU inventory cap (max days of cover), a daily and weekly **working-capital budget** (sum of `qty × unit_cost`), and human approval for POs above a $ threshold. Report holding cost and inventory turns next to fill rate, so the service target is always weighed against the cash it consumes.
